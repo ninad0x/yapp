@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Teacher {
+  id        String    @id @default(uuid())
+  name      String
+  email     String    @unique
+  password  String
+  parents   Parent[]
+  messages  Message[]
+  createdAt DateTime  @default(now())
+}
+
+model Parent {
+  id          String    @id @default(uuid())
+  teacherId   String
+  teacher     Teacher   @relation(fields: [teacherId], references: [id])
+  name        String
+  phone       String    @unique
+  language    String    @default("hi")
+  studentName String
+  messages    Message[]
+  createdAt   DateTime  @default(now())
+}
+
+model Message {
+  id           String   @id @default(uuid())
+  teacherId    String
+  teacher      Teacher  @relation(fields: [teacherId], references: [id])
+  parentId     String?
+  parent       Parent?  @relation(fields: [parentId], references: [id])
+  direction    String   
+  type         String   
+  originalText String     @db.Text
+  translatedText String?  @db.Text
+  fileUrl      String?
+  fileName     String?
+  metadata     Json?
+  autoReplied  Boolean  @default(false)
+  createdAt    DateTime @default(now())
+}
