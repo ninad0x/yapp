@@ -27,23 +27,34 @@ Yapp enables schools to communicate effortlessly with parents in their native la
 
 ## Images
 
-### Teacher Dashboard – Send Messages
+### Teacher Dashboard – Landing
+![Landing](public/demo/landing.png)
+
+### Teacher Dashboard – Parent List
 ![Teacher Dashboard](public/demo/parent_list.png)
 
 ### Teacher Inbox – Translated Messages
 ![Inbox](public/demo/inbox.png)
 
 ### WhatsApp Flow – Language Selection
-![Join Hindi](public/demo/join_hindi.png)
+<p align="center">
+  <img src="public/demo/join_hindi.png" height="420"/>
+</p>
 
 ### Parent Receives Translated Message
-![Reply Hindi](public/demo/reply_hindi.png)
+<p align="center">
+  <img src="public/demo/reply_hindi.png" height="420"/>
+</p>
 
 ### Hinglish Support
-![Reply Hinglish](public/demo/reply_hinglish.png)
+<p align="center">
+  <img src="public/demo/reply_hinglish.png" height="420"/>
+</p>
 
-### Parent Sends Message
-![Result PDF Translation](public/demo//result_hindi.png)
+### Parent Sends Message / PDF Translation Result
+<p align="center">
+  <img src="public/demo/result_hindi.png" height="420"/>
+</p>
 
 ## 🚀 Features
 
