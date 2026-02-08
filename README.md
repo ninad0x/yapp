@@ -140,7 +140,7 @@ MIT License - see LICENSE file for details
 
 - [Lingo Translation API](https://lingo.com) for powering multilingual support
 - [Twilio](https://twilio.com) for WhatsApp integration
-- Built for the [Hackathon Name] 2026
+- Built for the Lingo.dev Hackathon 2026
 
 ---
 
