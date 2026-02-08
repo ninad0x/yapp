@@ -25,6 +25,26 @@ Yapp enables schools to communicate effortlessly with parents in their native la
 - 🇮🇳 **Hinglish Support** - Understands Hindi written in Roman script (e.g., "Mera beta kaisa padhai kar raha hai")
 - 💰 **95% Cost Reduction** - $0.005 per message vs. $0.50 human translation
 
+## Images
+
+### Teacher Dashboard – Send Messages
+![Teacher Dashboard](public/demo/parent_list.png)
+
+### Teacher Inbox – Translated Messages
+![Inbox](public/demo/inbox.png)
+
+### WhatsApp Flow – Language Selection
+![Join Hindi](public/demo/join_hindi.png)
+
+### Parent Receives Translated Message
+![Reply Hindi](public/demo/reply_hindi.png)
+
+### Hinglish Support
+![Reply Hinglish](public/demo/reply_hinglish.png)
+
+### Parent Sends Message
+![Result PDF Translation](public/demo//result_hindi.png)
+
 ## 🚀 Features
 
 ### For Teachers
@@ -94,27 +114,6 @@ NGROK_URL="your_ngrok_or_production_url"
 ```
 
 ## 🎬 Demo
-
-### Teacher Dashboard - Send Messages
-![Teacher Dashboard](public/demo/result.hindi.png)
-
-### Parent List Management
-![Parent List](public/demo/parent-list.png)
-
-### Teacher Inbox - Translated Messages
-![Inbox](public/demo/inbox.png)
-
-### WhatsApp Flow - Language Selection
-![Join Hindi](public/demo/join-hindi.png)
-
-### Parent Receives Translated Message
-![Reply Hindi](public/demo/reply-hindi.png)
-
-### Hinglish Support
-![Reply Hinglish](public/demo/reply-hinglish.png)
-
-### Parent Sends Message
-![Sending Message](public/demo/sending.png)
 
 [Video Demo Link - Coming Soon]
 
