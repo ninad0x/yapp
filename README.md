@@ -31,29 +31,37 @@ Yapp enables schools to communicate effortlessly with parents in their native la
 ![Landing](public/demo/landing.png)
 
 ### Teacher Dashboard – Parent List
-![Teacher Dashboard](public/demo/parent_list.png)
+![Parent List](public/demo/parent_list.png)
 
 ### Teacher Inbox – Translated Messages
 ![Inbox](public/demo/inbox.png)
 
-### WhatsApp Flow – Language Selection
-<p align="center">
-  <img src="public/demo/join_hindi.png" height="420"/>
-</p>
+### WhatsApp Flow – Hindi Selection & Reply
 
-### Parent Receives Translated Message
 <p align="center">
+  <img src="public/demo/join_hindi.png" height="420" style="margin-right:40px;"/>
   <img src="public/demo/reply_hindi.png" height="420"/>
 </p>
 
-### Hinglish Support
 <p align="center">
-  <img src="public/demo/reply_hinglish.png" height="420"/>
+  <b>Language Selection</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Reply in Hindi</b>
 </p>
 
-### Parent Sends Message / PDF Translation Result
+<br/>
+
+### Hinglish Reply & Translation Result
+
 <p align="center">
+  <img src="public/demo/reply_hinglish.png" height="420" style="margin-right:40px;"/>
   <img src="public/demo/result_hindi.png" height="420"/>
+</p>
+
+<p align="center">
+  <b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Reply in Hinglish</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Translation Result PDF</b>
 </p>
 
 ## 🚀 Features
