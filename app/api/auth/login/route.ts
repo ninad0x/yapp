@@ -21,5 +21,5 @@ export async function POST(req: Request) {
         { expiresIn: "7d" }
     );
 
-  return Response.json({ token });
+  return Response.json({ token, teacher });
 }

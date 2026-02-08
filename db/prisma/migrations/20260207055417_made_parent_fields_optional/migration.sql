@@ -1,0 +1,6 @@
+-- AlterTable
+ALTER TABLE "Parent" ALTER COLUMN "name" DROP NOT NULL,
+ALTER COLUMN "language" DROP NOT NULL,
+ALTER COLUMN "language" SET DEFAULT 'en',
+ALTER COLUMN "studentName" DROP NOT NULL,
+ALTER COLUMN "onboardingStep" SET DEFAULT 1;

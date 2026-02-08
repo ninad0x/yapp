@@ -29,6 +29,7 @@ import {
 } from "@/components/ui/select"
 import { useAuth } from "@/hooks/useAuth";
 import { useInbox } from "@/hooks/useMessage";
+import Link from "next/link"
 
 
 async function handleLogout() {
@@ -38,18 +39,25 @@ async function handleLogout() {
 
 async function handleSendMessage() {
   const textarea = document.getElementById("message") as HTMLTextAreaElement
-  if (!textarea.value.trim()) return
+  const pdfInput = document.getElementById("file") as HTMLInputElement
+  
+  if (!textarea.value.trim() && !pdfInput.files?.length) return
+
+  const form = new FormData()
+  form.append("teacherId", "e089eb01-3e4f-4f73-a6c1-fea092d8f1e9")
+  form.append("text", textarea.value)
+  
+  if (pdfInput.files?.[0]) {
+    form.append("pdf", pdfInput.files[0])
+  }
 
   await fetch("/api/messages/send", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      teacherId: "e089eb01-3e4f-4f73-a6c1-fea092d8f1e9",
-      text: textarea.value
-    })
+    body: form
   })
 
   textarea.value = ""
+  pdfInput.value = "" // Clear file input
 }
 
 export default function DashboardPage() {
@@ -61,7 +69,11 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white border-b px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-blue-600">Yapp</h1>
+        <Link href="/">
+          <h1 className="text-2xl font-bold text-primary cursor-pointer hover:opacity-80 transition-opacity">
+            Yapp
+          </h1>
+        </Link>
         <div className="flex items-center gap-4">
           <span className="text-md text-gray-800">{teacher?.name}</span>
           <Button onClick={handleLogout} variant="outline" size="sm">Logout</Button>
@@ -136,15 +148,36 @@ export default function DashboardPage() {
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell>Sunita Sharma</TableCell>
-                    <TableCell>Priya Sharma</TableCell>
+                    <TableCell>Max Prilutskiy</TableCell>
+                    <TableCell>Karl Prilutskiy</TableCell>
                     <TableCell>+919876543210</TableCell>
-                    <TableCell>Hindi</TableCell>
+                    <TableCell>Russian</TableCell>
                     <TableCell>
                       <Button variant="ghost" size="sm">Edit</Button>
                       <Button variant="ghost" size="sm">Delete</Button>
                     </TableCell>
                   </TableRow>
+                  <TableRow>
+                  <TableCell>Sumit Saurabh</TableCell>
+                  <TableCell>Karan Saurabh</TableCell>
+                  <TableCell>+919876543210</TableCell>
+                  <TableCell>Hindi</TableCell>
+                  <TableCell>
+                    <Button variant="ghost" size="sm">Edit</Button>
+                    <Button variant="ghost" size="sm">Delete</Button>
+                  </TableCell>
+                </TableRow>
+
+                <TableRow>
+                  <TableCell>Rajesh Kumar</TableCell>
+                  <TableCell>Arjun Kumar</TableCell>
+                  <TableCell>+919823456789</TableCell>
+                  <TableCell>English</TableCell>
+                  <TableCell>
+                    <Button variant="ghost" size="sm">Edit</Button>
+                    <Button variant="ghost" size="sm">Delete</Button>
+                  </TableCell>
+                </TableRow>
                   {/* Sample row - will be dynamic */}
                 </TableBody>
               </Table>
@@ -218,15 +251,15 @@ export default function DashboardPage() {
                 {new Date(msg.createdAt).toLocaleString()}
               </p>
             </div>
-            <Button variant="outline" size="sm">Reply</Button>
+            {/* <Button variant="outline" size="sm">Reply</Button> */}
           </div>
           <div className="space-y-2">
             <div>
-              <p className="text-xs text-gray-500">Original ({msg!.parent!.language}):</p>
+              {/* <p className="text-xs text-gray-500">Original ({msg!.parent!.language}):</p> */}
               <p className="text-sm">{msg.originalText}</p>
             </div>
             <div>
-              <p className="text-xs text-gray-500">Translation:</p>
+              <p className="text-xs text-gray-500 mb-1 mt-5">Translation:</p>
               <p className="text-sm font-medium">{msg.translatedText}</p>
             </div>
           </div>

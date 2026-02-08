@@ -16,8 +16,8 @@ export function useInbox(teacherId?: string) {
     }
 
     fetchInbox()
-    // const interval = setInterval(fetchInbox, 3000)
-    // return () => clearInterval(interval)
+    const interval = setInterval(fetchInbox, 3000)
+    return () => clearInterval(interval)
   }, [teacherId])
 
   return { messages }
