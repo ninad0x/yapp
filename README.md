@@ -39,7 +39,8 @@ Yapp enables schools to communicate effortlessly with parents in their native la
 ### WhatsApp Flow – Hindi Selection & Reply
 
 <p align="center">
-  <img src="public/demo/join_hindi.png" height="420" style="margin-right:40px;"/>
+  <img src="public/demo/join_hindi.png" height="420"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="public/demo/reply_hindi.png" height="420"/>
 </p>
 
@@ -54,7 +55,8 @@ Yapp enables schools to communicate effortlessly with parents in their native la
 ### Hinglish Reply & Translation Result
 
 <p align="center">
-  <img src="public/demo/reply_hinglish.png" height="420" style="margin-right:40px;"/>
+  <img src="public/demo/reply_hinglish.png" height="420"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="public/demo/result_hindi.png" height="420"/>
 </p>
 
