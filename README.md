@@ -4,7 +4,9 @@
 
 Yapp is a multilingual parent-teacher communication platform that automatically translates messages into 80+ languages and delivers them via WhatsApp. Built for schools with diverse parent communities.
 
-[![Demo Video](https://img.shields.io/badge/Watch-Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/RR4hwRrSCS4)
+<a href="https://youtu.be/RR4hwRrSCS4" target="_blank">
+  <img src="https://img.shields.io/badge/Watch-Demo-red?style=for-the-badge&logo=youtube" alt="Demo Video">
+</a>
 
 ## 🎯 The Problem
 
